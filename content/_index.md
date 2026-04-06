@@ -1,6 +1,6 @@
 +++
-title = ""
+title = "Ders Notları"
 type = "home"
 +++
 
-This is your new home page.
+Ders notları ana sayfası. Soldaki menüden ilgili dersi seçebilirsiniz.

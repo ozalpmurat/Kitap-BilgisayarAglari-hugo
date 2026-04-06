@@ -1,0 +1,14 @@
+{{- $attributes := partial "docs/text/mapper" (dict
+  "attributes" (cond .IsNamedParams .Params dict)
+  "merge" (dict
+    "open" (cond .IsNamedParams (.Get "open") (in .Params "open"))
+  )
+) -}}
+<details {{ partial "docs/html-attrs" $attributes | safeHTMLAttr }}>
+{{- $summary := cond .IsNamedParams (.Get "title") (.Get 0) -}}
+<summary>{{ $summary | .Page.RenderString }}</summary>
+{{- /* remove whitespaces */ -}}
+<div class="markdown-inner">
+{{ .Inner | safeHTML -}}
+</div></details>
+{{- /* remove whitespaces */ -}}

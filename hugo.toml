@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+locale = 'tr-TR'
+title = 'Ders Notları'
 theme = 'hugo-theme-relearn'
 [module]
   [[module.imports]]
